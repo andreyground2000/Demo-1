@@ -1,2 +1,2 @@
 # Demo-1
-Demo task for SoftServe IT academy
+Demo tasks for SoftServe IT academy.
