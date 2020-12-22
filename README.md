@@ -1,7 +1,6 @@
 # Demo-1
 Demo tasks for SoftServe IT academy.
 
-JS Elementary Tasks
 Правила оформления заданий
 •	Точка входа в приложение – файл main.js. 
 •	Все реализации находятся внутри папки src
