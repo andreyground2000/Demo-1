@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: url(img/matrix.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.mainContainer {
+    width: 1140px;
+    margin: 0 auto;
+    
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+fieldset {
+    border: none;
+    padding-left: 0px;
+}
+
+button {
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 1% 2%;
+    border-radius: 3px;
+    outline: rgba(0, 0, 0, 1);
+    box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
+    margin: 5px;
+}
+button:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 1px white;
+}
+button:active {
+    transform: scale(1.1);
+}
+.containerFirstTask, .containerSecondTask, .containerThirdTask, .containerFourthTask, .containerFifthTask, .containerSixTask,.containerSevenTask {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom:10px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.demonstrationDiv {
+    display: inline-block;
+}

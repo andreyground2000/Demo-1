@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Demo 1</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <h1>Demo 1</h1>
+        <div class="containerFirstTask">
+            <h2>Task 1</h2>
+            <p>Вывести шахматную доску с заданными размерами высоты и ширины, по принципу:</p>
+            <pre>
+*  *  *  *  *  *
+  *  *  *  *  *  *   
+*  *  *  *  *  *   
+  *  *  *  *  *  * 
+            </pre>
+            <p>Входные параметры: длина, ширина, символ для отображения.
+            Выход: строка с представлением шахматной доски.</p>
+            <fieldset>
+                <input type="text" id="widthTask1"> Ширина
+            </fieldset>
+            <fieldset>
+                <input type="text" id="heightTask1"> Длина
+            </fieldset>
+            <fieldset>
+                <input type="text" id="symbolTask1"> Символ
+            </fieldset>
+            <button id="task1Btn">Нажать</button>
+            <pre class="resultTask1"></pre>     
+        </div>
+        <div class="containerSecondTask">
+            <h2>Task 2</h2>
+            <p>Есть два конверта со сторонами (a,b) и (c,d). Требуется определить, можно ли один конверт вложить в другой.
+            Программа должна обрабатывать ввод чисел с плавающей точкой.</p>
+            <p>Входные параметры: объекты конверт1 и конверт2 
+                Выход: номер конверта, если вложение возможно, 0 – если вложение невозможно.</p>
+            <fieldset>
+                <legend>Конверт 1</legend>
+                <label>
+                    a:
+                    <input type="text" id="aTask2">
+                </label>
+                <label>
+                    b:
+                    <input type="text" id="bTask2">
+                </label> 
+            </fieldset>
+            <fieldset>
+                <legend>Конверт 2</legend>
+                <label>
+                    c:
+                    <input type="text" id="cTask2">
+                </label>
+                <label>
+                    d:
+                    <input type="text" id="dTask2">
+                </label> 
+            </fieldset>
+            <button id="task2Btn">Нажать</button>
+            <div class="resultTask2"></div>
+        </div>
+        <div class="containerThirdTask">
+            <h2>Task 3</h2>
+            <p>Вывести треугольники в порядке убывания их площади.</p>
+            <p>Входные параметры: массив объектов треугольник
+               Выход: упорядоченный массив имён треугольников</p>
+            <strong>Примечание:</strong>
+            <ul>
+                <li>Расчёт площади треугольника должен производится по формуле Герона.</li>
+                <li>Каждый треугольник определяется именами вершин и длинами его сторон.</li>
+                <li>Приложение должно обрабатывать ввод чисел с плавающей точкой:</li>
+            </ul>
+            <fieldset>
+                <label>
+                    Вершины:
+                    <input type="text" id="verticiesTask3">
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Сторона 1:
+                    <input type="text" id="side1Task3"> 
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Cторона 2:
+                    <input type="text" id="side2Task3">
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>
+                    Cторона 3:
+                    <input type="text" id="side3Task3">
+                </label>
+            </fieldset>
+            <button id="addTrTask3">Добавить треугольник</button>
+            <button id="countSquareTask3">Вывести массив</button>
+            <div class="resultTask3"></div>
+        </div>
+        <div class="containerFourthTask">
+            <h2>Task4</h2>
+            <p>Проверить является ли число или его часть палиндромом. Например, число 1234437 не является палиндромом, но является палиндромом его часть 3443. 
+                Числа меньшие, чем 10 палиндромом не считать.</p>
+            <p>Входные параметры: число
+                Выход: извлечённый из числа палиндром либо 0, если извлечение не удалось.</p>
+            <label>
+                Число:
+                <input type="text" id="numberTask4">
+            </label>
+            <button id="task4Btn">Нажать</button>
+            <div class="resultTask4"></div>
+        </div>
+        <div class="containerFifthTask">
+            <h2>Task 5</h2>
+            <p>Есть 2 способа подсчёта счастливых билетов: <br>
+                1. Простой — если на билете напечатано шестизначное число, и сумма первых трёх цифр равна сумме последних трёх, то этот билет считается счастливым.<br>
+                2. Сложный — если сумма чётных цифр билета равна сумме нечётных цифр билета, то билет считается счастливым.</p>
+            <p>Определить программно какой вариант подсчёта счастливых билетов даст их большее количество на заданном интервале. </p>
+            <p>Входные параметры: объект context с полями min и max <br>
+                Выход: объект с информацией о победившем методе и количестве счастливых билетов для каждого способа подсчёта.</p>
+            <fieldset>
+                <label>
+                    min:
+                    <input type="text" id="minTask5">
+                </label>
+                <label>
+                    max:
+                    <input type="text" id="maxTask5">
+                </label> 
+            </fieldset>
+            <button id="task5Btn">Нажать</button>
+            <div class="resultTask5"></div>
+        </div>
+        <div class="containerSixTask">
+            <h2>Task 6</h2>
+            <p>Вывести через запятую ряд длиной n, состоящий из натуральных чисел, квадрат которых не меньше заданного m.</p>
+            <p>Входные параметры: длина и значение минимального квадрата
+               Выход: строка с рядом чисел</p>
+            <fieldset>
+                <label>
+                    n:
+                    <input type="text" id="nTask6">
+                </label>
+                <label>
+                    m:
+                    <input type="text" id="mTask6">
+                </label> 
+           </fieldset>
+           <button id="task6Btn">Нажать</button> 
+           <div class="resultTask6"></div>  
+        </div> 
+        <div class="containerSevenTask">
+            <h2>Task 7</h2>
+            <p>Вывести все числа Фибоначчи, которые удовлетворяют переданному в функцию ограничению:
+               находятся в указанном диапазоне, либо имеют указанную длину.</p>
+            <p>Входные параметры: объект context с полями min и max, либо с полем length 
+               Выход: массив чисел</p>
+            <fieldset>
+                <label>
+                    Длина:
+                    <input type="text" id="widthTask7">
+                </label>
+                <button id="lengthTask7Btn">Нажать</button>
+            </fieldset>
+            <fieldset>
+                <label>
+                    min:
+                    <input type="text" id="minTask7">
+                </label>
+                <label>
+                    max:
+                    <input type="text" id="maxTask7">
+                </label>
+                <button id="minMaxTask7Btn">Нажать</button>
+            </fieldset>
+            <div class="resultTask7"></div>
+        </div>
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
